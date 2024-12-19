@@ -6,17 +6,17 @@ So, we need to monitor & process Ethereum event logs for NFT sale transactions d
 
 Currently, `Opensea`, `Blur`, `LooksRare` & `X2Y2` are supported.
 
-## Setup 🔧
+## Setup
 
-### - abi.json
+### abi.json
 
 - Retrieve the **Contract ABI** for the contract you're looking to monitor, from somewhere like [EtherScan](https://etherscan.io), in JSON format, and include it in `abi.json`.
 
-### - Alchemy
+### Alchemy
 
 - Create an account at [Alchemy.com](https://alchemy.com) & create a new application on Ethereum mainnet. Once you've created a project, you should be able to grab the API key for it
 
-### - X
+### X
 
 - Ensure you have an [X Developer Account](https://developer.twitter.com/), then create a X Developer App (make sure it has both read/write permissions)
 
@@ -24,7 +24,7 @@ Currently, `Opensea`, `Blur`, `LooksRare` & `X2Y2` are supported.
 
 - Install [Twurl](https://github.com/twitter/twurl) and, using your X Developer consumer key & secret, generate the access token & access secret
 
-### - Heroku
+### Heroku
 
 - Create a new Heroku account + app (a $7 a month dyno instance should be enough but it'll depend on usage) & set the project as a remote branch of your git repo (see [Heroku Remote](https://devcenter.heroku.com/articles/git#creating-a-heroku-remote))
 
@@ -46,16 +46,18 @@ heroku ps:scale web=0
 heroku ps:scale worker=1
 ```
 
-## Modification 🛠
+## Modification
 
 In `app.js`, you'll notice there's some commented out logic for only posting sales above a certain `threshold` that you can modify per-currency in `currencies.js`.
 
 ## Credits
 
-[Kenryu42](https://github.com/kenryu42) for their help on adding Seaport support
+[Kenryu42](https://github.com/kenryu42) for their help on adding Seaport support 🎉
 
-## License 📃
+## Contributing
 
-This code is licensed under the [ISC License](https://choosealicense.com/licenses/isc/).
+If you've found a bug or have an idea, feel free to open an Issue. If you've got a fix or feature ready, open a PR. Thanks!
 
-Please include proper attribution to my original repo if you fork, modify or utilize this repo in any way. Thank you!
+## License
+
+MIT
