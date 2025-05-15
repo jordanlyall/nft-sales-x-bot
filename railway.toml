@@ -1,9 +1,11 @@
 [build]
 builder = "nixpacks"
-buildCommand = "npm install"
+buildCommand = "npm install --no-package-lock"
 
 [deploy]
 startCommand = "node index.js"
-healthcheckPath = "/"
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
+
+[[deploy.pre-deploy]]
+command = "echo 'Checking environment variables...'"
