@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,7 @@
     "url": "https://github.com/dsgriffin/nft-sales-twitter-bot/issues"
   },
   "homepage": "https://github.com/dsgriffin/nft-sales-twitter-bot#readme",
-    "dependencies": {
+  "dependencies": {
     "alchemy-sdk": "^2.4.3",
     "async-retry": "^1.3.3",
     "axios": "^0.24.0",
